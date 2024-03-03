@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"content="width=device-width,initial-scale=1.0">
+  <title> MyPortfolio</title>
+  <link rel="stylesheet" href="pp.css"> 
+</head>
+<body>
+    <div id="header">
+      <div class="title-text">
+        <nav>
+            <img src="" class="logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+         </nav>
+                
+                
+       <div class="header-text">
+        <p>Fresher</p>
+        <img class="img_home" src="pj1.png">
+        <h1>Hello,I'm <span>Abhayraj Jadhav</span><br>From  Maharashtra India.</h1>
+
+        
+             
+            <div id="social-container">
+                <img src="linked.png" alt="My Linkedin profile"class="icon"
+                onclick="location.href='https://www.linkedin.com/in/abhayraj-jadhav'"/>
+
+                
+                    <img src="git.png" alt="My github profile"class="icon"
+                    onclick="location.href='https://github.com/Abhayraj-jadhav'"/>
+                </div>
+                <div class="buttons">
+                    <div class="title">
+                       
+                    
+                    <button>Upload CV</button> 
+                     
+                    <a href="mailto:jadhavabhayraj018@gmail.com">
+                    <button>Contact Me</button></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+            
+<!-----about------>
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+          <img src="AJ1.jpeg">
+</div>
+<div class="about-col-2">
+    <h1 class="sub-title">About Me</h1>
+      <p>MY LIFE IS FULL OF EXPERIMENTS & ACHIEVEMENTS, THERE ARE SUCCESS AND
+          FAILURES ALSO IN MY LIFE. YES,I CONTINUE TO UPDATE MYSELF TO BE THE BETTER VERSION OF MYSELF.<br>
+          I AM VERY CONFIDENT PERSON AND CAN TACKLE EVERY CIRCUMSTANCES.TO WORK IN AN INTERACTIVE ORGANISATION WITH A PROFESSIONAL WORK DRIVEN ENVIRONMENT
+          THAT OFFERS ME A CONSTRUCTIVE WORKPLACE WHERE
+          I CAN APPLY MY KNOWLEDGE, SKILLS WHICH WOULD ENABLE ME 
+          AS A FRESH GRADUATE TO GROW WHILE FULFILLING ORGANISATIONAL GROWTH.</br></p>
+         
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+    <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+    <p class="tab-links"onclick="opentab('INTERNSHIPS')">INTERNSHIPS</p>
+   </div>
+   <div class="tab-contents active-tab" id="SKILLS">
+    <ul>
+        <li><span>●Programming Languages:</span><br>C, Java, Python, HTML, CSS, Javascript </li>
+        <li><span>●Database:</span><br> MySQL</li>
+        <li><span>●Application Softwares:</span><br>Android Studio, Visual Studio  Code </li>   
+    </ul>
+</div> 
+
+    <div class="tab-contents " id="EDUCATION">
+    <ul>
+        <li><span>● Haribai Devkaran High School, Solapur<br> S.S.C. </span><br>91% </li>
+        <li><span>●sangmeshwar College,Solapur<br> H.S.C. Science</span><br>80% </li> 
+           
+            
+        
+        <li><span>●June 2022 - June 2023<br>N.K.ORCHID COLLEGE OF ENGINEERING,SOLAPUR<br>(BCA)</span><br>1stYear : 7.64 And 7.48<br></li>  
+        </ul>
+        </div>   
+            
+        <div class="tab-contents" id="INTERNSHIPS">
+            <ul>
+                <li><span>•Younity [10days]training.</span><br>-Best Decision Maker Certification in July2023.<br>-Fast Starter Certification in July2023.
+                    <br>-Star Performer Certification in July2023.<br> -Corporate Development Specialist Certification in July2023. </li>
+                    <li><span>•Web Development intern at codsoft[20 Jan 2024 to 20 Feb 2024].</span></li>    
+                </ul>
+            </div>
+            </div>
+        </div>    
+    </div>
+</div>   
+        
+<!---projects-->
+    <div id="projects">
+    <div class="container">
+        <div class="title">
+            <h2>MY PROJECT</h2>
+        </div>
+
+        <div>
+           <div class="box">
+            <div class="card">
+                
+                <i class="fas fa-bars"></i>
+                <h5>Cafe Management System</h5>
+                <div class="pra">
+                    <p>Aim of this project was to manage all the bills and orders of cafe efficiently using 
+                        python library Tkinter.</p>
+                </div>
+            </div>  
+                  
+           <div class="card">
+            <i class="fas fa-bars"></i>
+            <h5>Zombie Horde Game</h5>
+            <div class="pra">
+                <p>Aim of Creating a zombie shooter  game is fun and a great way to
+                    learn some JavaScript fundamentals.<br>
+                    The game includes:Animations,Basic Enemy AI,JavaScript etc.</p>
+                    
+            </div>
+        </div>
+                
+        <div class="card">
+            <i class="fas fa-bars"></i>
+            <h5>E-Commerce for Artisans</h5>
+           <div class="pra">
+               <p>Aim of this project was to create such an E-Commerce website through which 
+                suppliers and buyers of handicrafts, handlooms meet at one place to grow the 
+                business as well as profit.</p>
+        </div>
+    </div>
+   </div>
+   </div>  
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    </script>
+
+     <!----footer--->
+        <div class="copyright">
+            <div class="link">
+                <a href="home">HOME</a>
+                <a href="about">ABOUT</a>
+                <a href="project">PROJECT</a>
+                <a href="contact">CONTACT</a>
+            </div>
+            <p>&#169; Abhayraj Jadhav All Right Reserved</p>
+        </div>
+    </body>
+    </html>
+
+                
+                   
+              
+                          
+          
+           
+        
+        
+    
+         
+            
+             
+    
+   
+
+
+
+
+    
+
+
+
+           
+
+
+
+
+
